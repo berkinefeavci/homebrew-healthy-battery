@@ -1,9 +1,15 @@
 # Healthy Battery Homebrew tap
 
-[Healthy Battery](https://github.com/berkinefeavci/healthy-battery) için Homebrew kurulumu:
+[Healthy Battery](https://github.com/berkinefeavci/healthy-battery) için yeni kurulum:
 
 ```sh
 brew install --cask berkinefeavci/healthy-battery/healthy-battery
 ```
 
-Eski `cellkeep` kurulumu için `cellkeep` cask korunur. İki cask aynı uygulamanın alternatifleridir; birlikte kurmayın. Mevcut kurulumları `brew upgrade --cask cellkeep` ile güncelleyin.
+Mevcut `cellkeep` kurulumları ayrı [eski tap](https://github.com/berkinefeavci/homebrew-cellkeep) üzerinden güncellenir:
+
+```sh
+brew upgrade --cask berkinefeavci/cellkeep/cellkeep
+```
+
+İki cask aynı uygulamanın kurulum seçenekleridir; birlikte kurmayın.
