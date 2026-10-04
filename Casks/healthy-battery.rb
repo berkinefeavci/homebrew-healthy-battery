@@ -1,6 +1,6 @@
 cask "healthy-battery" do
-  version "1.2.2"
-  sha256 "5e2cddaa01b0d260e4145fdf58e6354062ec7213c54ef842ce9a17ea743f6b32"
+  version "1.2.3"
+  sha256 "e8c408f9980db530e90cd4c09148aa50af4c781f8ff4e71cf76d2e561b8646d6"
 
   url "https://github.com/berkinefeavci/healthy-battery/releases/download/v#{version}/Healthy-Battery-#{version}.dmg"
   name "Healthy Battery"
