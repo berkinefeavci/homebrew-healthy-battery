@@ -1,8 +1,8 @@
-cask "cellkeep" do
+cask "healthy-battery" do
   version "1.2.2"
-  sha256 "bb1f0b8fb48e991a065758d8d4553824b95436e069c58d2c37e4e3f114cf73bb"
+  sha256 "5e2cddaa01b0d260e4145fdf58e6354062ec7213c54ef842ce9a17ea743f6b32"
 
-  url "https://github.com/berkinefeavci/healthy-battery/releases/download/v#{version}/Cellkeep-#{version}.dmg"
+  url "https://github.com/berkinefeavci/healthy-battery/releases/download/v#{version}/Healthy-Battery-#{version}.dmg"
   name "Healthy Battery"
   desc "Menu bar charge limiter and battery monitor"
   homepage "https://github.com/berkinefeavci/healthy-battery"
@@ -15,7 +15,7 @@ cask "cellkeep" do
   depends_on arch: :arm64
   depends_on macos: :ventura
 
-  app "Cellkeep.app"
+  app "Healthy Battery.app"
 
   # `brew upgrade` runs `uninstall` too, so it only quits the app. Removing the root helpers there
   # would ask for a password on every upgrade and turn off the LED and power-mode helpers.
@@ -39,9 +39,9 @@ cask "cellkeep" do
       ]
 
   caveats <<~EOS
-    Upgrades keep Healthy Battery's helpers. To remove them, use Settings → General → Uninstall
-    Healthy Battery first, or `brew uninstall --zap --cask cellkeep`.
-    Healthy Battery's charge limit uses macOS's own charge-limit setting, which stays as it was
+    Upgrades keep Cellkeep's helpers. To remove them, use Settings → General → Uninstall
+    Cellkeep first, or `brew uninstall --zap --cask healthy-battery`.
+    Cellkeep's charge limit uses macOS's own charge-limit setting, which stays as it was
     after uninstalling. Reset it in System Settings → Battery if you want to.
   EOS
 end

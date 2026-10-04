@@ -1,7 +1,9 @@
 # Healthy Battery Homebrew tap
 
-Homebrew tap for [Healthy Battery](https://github.com/berkinefeavci/healthy-battery). The `cellkeep` cask token remains for existing installs.
+[Healthy Battery](https://github.com/berkinefeavci/healthy-battery) için Homebrew kurulumu:
 
 ```sh
-brew install --cask berkinefeavci/cellkeep/cellkeep
+brew install --cask berkinefeavci/healthy-battery/healthy-battery
 ```
+
+Eski `cellkeep` kurulumu için `cellkeep` cask korunur. İki cask aynı uygulamanın alternatifleridir; birlikte kurmayın. Mevcut kurulumları `brew upgrade --cask cellkeep` ile güncelleyin.
